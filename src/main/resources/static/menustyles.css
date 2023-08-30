@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.background-image {
+    background-image: url('images/bg.jpg'); /* Add your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+}
+
+.opaque-section {
+    background-color: rgba(255, 255, 255, 0.9); /* Opaque white background */
+    padding: 50px;
+    margin: 100px auto; /* Adjust the margin as needed */
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.opaque-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+

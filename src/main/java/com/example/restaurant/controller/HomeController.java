@@ -10,7 +10,18 @@ public class HomeController {
 //    @RequestMapping(value = "/index")
     @GetMapping("/")
     public String home(Model model) {
-        // Add any required data to the model if needed
+        // Add data to the model
         return "home";
     }
+
+    @GetMapping("/fullmenu")
+    public String fullMenu() {
+        return "fullmenu"; //
+    }
+
+    @GetMapping("/contactus")
+    public String contactUs() {
+        return "contactus"; //
+    }
+
 }
