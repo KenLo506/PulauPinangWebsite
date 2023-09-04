@@ -169,8 +169,6 @@
         <p>Price: $X.XX</p>
       </div>
     </div>
-
-
       <a href="/fullmenu" class="btn btn-primary">View Full Menu</a>
     </div>
   </section>
@@ -236,20 +234,46 @@
     });
   </script>
 
+<!--  <script>-->
+<!--    let startY;-->
+<!--    let endY;-->
+
+<!--    document.querySelector('.welcome-section').addEventListener('touchstart', (event) => {-->
+<!--      startY = event.touches[0].clientY;-->
+<!--    });-->
+
+<!--    document.querySelector('.welcome-section').addEventListener('touchend', (event) => {-->
+<!--      endY = event.changedTouches[0].clientY;-->
+<!--      if (endY < startY) {-->
+<!--        // Swipe up detected, hide the welcome section-->
+<!--        document.querySelector('.welcome-section').style.display = 'none';-->
+<!--      }-->
+<!--    });-->
+<!--  </script>-->
+
+<!--  <script>-->
+<!--    $(document).ready(function() {-->
+<!--    // ...-->
+
+<!--    // In your AJAX success callback, add a class to apply the fade-in animation-->
+<!--    dishes.forEach(function(dish) {-->
+<!--    dishList.append(`<div class="dish">-->
+<!--      <h3>${dish.name}</h3>-->
+<!--      <p>${dish.description}</p>-->
+<!--      <p>Price: $${dish.price}</p>-->
+<!--    </div>`);-->
+<!--    });-->
+
+<!--    // Add the 'show' class to trigger the animation-->
+<!--    $(".dish").addClass("show");-->
+<!--    });-->
+<!--  </script>-->
+
   <script>
-    let startY;
-    let endY;
-
-    document.querySelector('.welcome-section').addEventListener('touchstart', (event) => {
-      startY = event.touches[0].clientY;
-    });
-
-    document.querySelector('.welcome-section').addEventListener('touchend', (event) => {
-      endY = event.changedTouches[0].clientY;
-      if (endY < startY) {
-        // Swipe up detected, hide the welcome section
-        document.querySelector('.welcome-section').style.display = 'none';
-      }
+    $(document).ready(function() {
+      $("#menu-toggle").click(function() {
+        $("#menu").slideToggle();
+      });
     });
   </script>
 
