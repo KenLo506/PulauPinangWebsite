@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" th:href="@{homestyle.css}" type="text/css"/>
+    <link rel="stylesheet" men type="text/css"/>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 
 </head>
@@ -168,9 +168,11 @@
         <p>Description of Dish 2</p>
         <p>Price: $X.XX</p>
       </div>
-    </div>
-      <a href="/fullmenu" class="btn btn-primary">View Full Menu</a>
-    </div>
+      <div class="fullmenu-button">
+        <a href="/fullmenu" class="btn btn-primary btn-lg" style="background-color: rgb(2, 155, 64); text-decoration: none;">
+          <span style="font-family: 'Poppins', sans-serif; font-weight: bold; font-size: 18px;">Fullmenu</span>
+        </a>
+      </div>
   </section>
 
   <footer id="contact">

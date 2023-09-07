@@ -203,3 +203,22 @@ h2{
 p{
     font-family: 'Poppins', sans-serif;
 }
+
+
+.fullmenu-button .btn {
+    color: white;
+    background-color: rgb(2, 155, 64);
+    border: none;
+    border-radius: 5px; /* Adjust for rounded corners */
+    padding: 10px 20px; /* Adjust padding for button size */
+    font-family: 'Poppins', sans-serif; /* Use your desired font */
+    font-weight: bold;
+    font-size: 18px; /* Adjust the font size */
+    text-transform: uppercase; /* Convert text to uppercase */
+    transition: background-color 0.3s; /* Add a smooth color transition on hover */
+}
+
+.fullmenu-button .btn:hover {
+    background-color: rgb(0, 128, 0); /* Change color on hover */
+    cursor: pointer;
+}
