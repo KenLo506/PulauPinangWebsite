@@ -1,5 +1,6 @@
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
     line-height: 2;
     margin: 0;
     padding: 0;
@@ -34,7 +35,6 @@ header .navbar {
 }
 
 header .navbar-brand {
-
     font-size: 28px;
     height: 60px; /* Adjust the value to fit your navbar */
     padding: 50px 0; /* Add padding to move the logo down */
@@ -55,8 +55,9 @@ header .navbar-brand:hover .navbar-logo {
 }
 
 header .navbar-nav .nav-link {
+    font-family: 'Raleway', serif;
     font-size: 20px;
-    margin-left: 20px;
+    margin-left: 70px;
     transition: transform 0.3s, color 0.3s;
 }
 
@@ -172,6 +173,37 @@ header .navbar-nav .nav-link:hover {
     font-size: 16px;
 }
 
+.row{
+    text-align: center;
+    justify-content: center;
+}
+
+
+.fullmenu-button {
+    text-align: center;
+    justify-content: center;
+    padding: 40px 0; /* Adjust vertical padding as needed */
+}
+
+.fullmenu-button .btn {
+    color: white;
+    background-color: rgb(2, 155, 64);
+    border: none;
+    border-radius: 5px; /* Adjust for rounded corners */
+    padding: 10px 20px; /* Adjust padding for button size */
+    font-family: 'Poppins', sans-serif; /* Use your desired font */
+    font-weight: bold;
+    font-size: 18px; /* Adjust the font size */
+    text-transform: uppercase; /* Convert text to uppercase */
+    transition: background-color 0.3s; /* Add a smooth color transition on hover */
+    text-align: center;
+}
+
+.fullmenu-button .btn:hover {
+    background-color: rgb(0, 128, 0); /* Change color on hover */
+    cursor: pointer;
+}
+
 footer {
     background-color: #333;
     color: #fff;
@@ -198,27 +230,26 @@ h2{
     font-family: 'Poppins', sans-serif;
     font-size: x-large;
     font-weight: bold;
+    margin-bot: 150px;
 }
 
 p{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Playfair Display', serif;
+}
+
+a{
+    font-family: 'Raleway', serif;
 }
 
 
-.fullmenu-button .btn {
-    color: white;
-    background-color: rgb(2, 155, 64);
-    border: none;
-    border-radius: 5px; /* Adjust for rounded corners */
-    padding: 10px 20px; /* Adjust padding for button size */
-    font-family: 'Poppins', sans-serif; /* Use your desired font */
-    font-weight: bold;
-    font-size: 18px; /* Adjust the font size */
-    text-transform: uppercase; /* Convert text to uppercase */
-    transition: background-color 0.3s; /* Add a smooth color transition on hover */
+
+#contact h5 a {
+    color: rgb(212,212,212) !important;
+    font-size: 16px;
+    text-decoration-line: underline;
 }
 
-.fullmenu-button .btn:hover {
-    background-color: rgb(0, 128, 0); /* Change color on hover */
-    cursor: pointer;
+#contact h6 a {
+    color: rgb(212,212,212) !important;
+    font-size: 40px;
 }

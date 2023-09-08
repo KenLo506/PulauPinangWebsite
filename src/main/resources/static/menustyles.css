@@ -1,27 +1,12 @@
-
-
-.background-image {
-    background-image: url('images/bg.jpg'); /* Add your background image */
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 300px;
+    background-image: url('images/bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    height: 100vh;
-}
-
-.opaque-section {
-    background-color: rgba(255, 255, 255, 0.9); /* Opaque white background */
-    padding: 50px;
-    margin: 100px auto; /* Adjust the margin as needed */
-    max-width: 800px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-
-.opaque-section h2 {
-    font-size: 36px;
-    font-weight: bold;
-    text-align: center;
 }
 
 .back-button {
@@ -29,8 +14,7 @@
     top: 20px;
     left: 20px;
     z-index: 9999; /* To ensure it's on top of other content */
-    padding: 10px 20px; /* Adjust padding to increase button size */
-    border-radius: 5px; /* Rounded corners */
+    border-radius: 10px; /* Increase border-radius for rounder corners */
 }
 
 /* Style the button text color and hover effect */
@@ -41,4 +25,9 @@
 
 .back-button .btn:hover {
     background-color: rgb(0, 128, 0); /* Change color on hover */
+}
+
+.opaque-section {
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust opacity and color as needed */
+    height: 100vh; /* Adjust the height as needed */
 }
