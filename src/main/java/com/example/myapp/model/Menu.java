@@ -1,18 +1,22 @@
 package com.example.myapp.model;
-import javax.persistence.*;
+
+import jakarta.persistence.*;
+
 
 @Entity
-@Table(name = "menu_items")
-public class MenuItem {
+public class Menu {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "name")
     private String name;
+
+    @Column(name = "description")
     private String description;
+
+    @Column(name = "price")
     private double price;
 
     // Getters and setters
-
-    // Constructors, other methods, and additional annotations
 }

@@ -20,12 +20,29 @@
 </div>
 
 
+<div class="back-button">
+  <a href="/" class="btn btn-primary btn-lg" style="background-color: rgb(2, 155, 64); text-decoration: none;">
+    <span style="font-family: 'Poppins', sans-serif; font-weight: bold; font-size: 50px;">Back</span>
+  </a>
+</div>
+
 <div class="opaque-section">
   <div class="full-menu-container">
     <div class="menu">
       <h2>Menu</h2>
+      <table>
+        <tr>
+          <th>Item Name</th>
+          <th>Price</th>
+        </tr>
+        <tr th:each="menu : ${menus}">
+          <td th:text="${menu.itemName}"></td>
+          <td th:text="${menu.price}"></td>
+        </tr>
+      </table>
     </div>
   </div>
 </div>
 
 </body>
+</html>
