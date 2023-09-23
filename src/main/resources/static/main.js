@@ -40,3 +40,15 @@
         $("#menu").slideToggle();
     });
 });
+
+    window.onscroll = function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 0) {
+            // When the user scrolls down, add a CSS class to make the navbar sticky
+            navbar.classList.add('sticky');
+        } else {
+            // When the user scrolls back to the top, remove the sticky class
+            navbar.classList.remove('sticky');
+        }
+    };
+

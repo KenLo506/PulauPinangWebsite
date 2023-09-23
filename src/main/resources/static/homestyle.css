@@ -27,11 +27,23 @@ header {
     color: white;
     padding: 10px;
     text-align: center;
+
 }
 
 header .navbar {
-    background-color: white;
-    border-bottom: 1px solid #ddd;
+    background-color: #174f33;
+    border-bottom: 10px solid green;
+    position: relative; /* Keep it relative for stacking order */
+    z-index: 1; /* Set z-index to be above content */
+}
+
+header .navbar.sticky {
+    background-color: rgba(242, 242, 242, 0.9); /* Change the background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a box shadow */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Add smooth transitions */
+    top: 0; /* Stick it to the top of the viewport */
+    position: fixed; /* Make it fixed to stay at the top */
+    z-index: 1000; /* Set a higher z-index for the sticky header */
 }
 
 header .navbar-brand {
@@ -47,11 +59,14 @@ header .navbar .navbar-logo {
     max-height: 200px; /* Adjust the value to fit your navbar */
     width: auto;
     margin-top: 84px;
+    /*border-width: 50px;*/
+    /*border-color: #000000 ;            FIGURE OUT BORDERS!*/
 }
 
 header .navbar-brand:hover .navbar-logo {
     transform: scale(1.1); /* Increase the size on hover */
     transition: transform 0.3s;
+
 }
 
 header .navbar-nav .nav-link {
@@ -59,12 +74,14 @@ header .navbar-nav .nav-link {
     font-size: 20px;
     margin-left: 70px;
     transition: transform 0.3s, color 0.3s;
+    color: darkgrey;
 }
 
 header .navbar-nav .nav-link:hover {
     transform: translateY(-3px);
-    color: #007bff;
+    color: black;
     font-size: 22px;
+
 }
 
 .carousel-inner{
@@ -136,13 +153,13 @@ header .navbar-nav .nav-link:hover {
 
 .about-section{
     padding: 80px 0;
-    background-color: rgba(255, 255, 255, 0.8); /* Adjust opacity and color as needed */
+    background-color: rgba(255, 255, 255, 0.8);
 
 }
 
 .menu-section {
     padding: 80px 0;
-    background-color: rgba(255, 255, 255, 0.8); /* Adjust opacity and color as needed */
+    background-color: rgba(255, 255, 255, 0.8);
     height: 100vh;
 }
 
@@ -191,10 +208,10 @@ header .navbar-nav .nav-link:hover {
     border: none;
     border-radius: 5px; /* Adjust for rounded corners */
     padding: 10px 20px; /* Adjust padding for button size */
-    font-family: 'Poppins', sans-serif; /* Use your desired font */
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    font-size: 18px; /* Adjust the font size */
-    text-transform: uppercase; /* Convert text to uppercase */
+    font-size: 18px;
+    text-transform: uppercase;
     transition: background-color 0.3s; /* Add a smooth color transition on hover */
     text-align: center;
 }
