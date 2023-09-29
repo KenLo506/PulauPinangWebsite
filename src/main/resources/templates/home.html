@@ -12,11 +12,11 @@
 
 </head>
 
-<body>
+<body id= "navbar">
 <!--navbar-expand-lg navbar-dark bg-dark-->
 <header>
   <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="#home">
+    <a class="navbar-brand" href="#navbar">
       <img th:src="@{images/nicelogo.png}" alt = "longer logo" class="navbar-logo" draggable="false">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -47,9 +47,10 @@
       <p>We are Pulau Pinang, a family-owned restaurant nestled in the heart of Elmhurst. At Pulau Pinang, we take pride in offering a delightful fusion of Malaysian and Taiwanese cuisine that will tantalize your taste buds and transport you to the vibrant streets of Asia. Our menu is a culinary journey through the rich flavors of Malaysia and Taiwan, showcasing a diverse range of dishes that cater to all palates. From our crispy Roti Canai to our aromatic rendang, we bring you the best of Malaysian and Taiwanese culinary traditions, made with love and care</p>
       <p>The name "Pulau Pinang" is a nod to the historical and cultural significance of Penang, a beautiful island state in Malaysia. Penang, often referred to as the "Pearl of the Orient," is renowned for its diverse culinary traditions, rich heritage, and vibrant street food culture. By naming our restaurant "Pulau Pinang," we pay homage to the culinary treasures of Penang and aim to bring a taste of its flavors and authenticity to you.</p>
     </div>
+    <img th:src="@{images/interior.jpg}" class="interior" draggable="false">
   </section>
 
-  <section id="home" class="carousel slide" data-ride="carousel">
+  <section class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
 
       <div class="carousel-item active"> <!-- Add "active" class to the first slide -->
@@ -83,10 +84,10 @@
     </div>
 
     <ol class="carousel-indicators">
-      <li data-target="#home" data-slide-to="0" class="active"></li>
-      <li data-target="#home" data-slide-to="1"></li>
-      <li data-target="#home" data-slide-to="2"></li>
-      <li data-target="#home" data-slide-to="3"></li>
+      <li data-target=".carousel" data-slide-to="0" class="active"></li>
+      <li data-target=".carousel" data-slide-to="1"></li>
+      <li data-target=".carousel" data-slide-to="2"></li>
+      <li data-target=".carousel" data-slide-to="3"></li>
     </ol>
   </section>
 
@@ -99,7 +100,7 @@
         <div class="col-md-6">
           <div class="dish">
             <h4>Roti Canai</h4>
-            <p>Description of Dish 1</p>
+            <p>Roti Canai is a popular Malaysian flatbread known for its flaky, thin layers, served with our flavorful chicken curry on the side.</p>
             <p>Price: $X.XX</p>
           </div>
         </div>
@@ -148,11 +149,11 @@
       </div>
     </div>
 
-      <div class="fullmenu-button">
-        <a href="/fullmenu" class="btn btn-primary btn-lg" style="background-color: rgb(2, 155, 64); text-decoration: none;">
-          <span style="font-family: 'Poppins', sans-serif; font-weight: bold; font-size: 18px;">Full Menu</span>
-        </a>
-    </div>
+        <div class="fullmenu-button">
+          <a href="/fullmenu" class="btn btn-primary btn-lg">
+            <span style="font-family: 'Poppins', sans-serif; font-weight: bold; font-size: 18px;">Full Menu</span>
+          </a>
+        </div>
   </section>
 
   <footer id="contact">

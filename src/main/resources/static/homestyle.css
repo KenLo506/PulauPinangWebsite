@@ -64,7 +64,7 @@ header .navbar .navbar-logo {
 }
 
 header .navbar-brand:hover .navbar-logo {
-    transform: scale(1.1); /* Increase the size on hover */
+    transform: scale(1.2); /* Increase the size on hover */
     transition: transform 0.3s;
 
 }
@@ -82,6 +82,27 @@ header .navbar-nav .nav-link:hover {
     color: black;
     font-size: 22px;
 
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-section .interior {
+    /* Styles for the interior image inside the about section */
+    /* For example: */
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
 }
 
 .carousel-inner{
@@ -200,6 +221,7 @@ header .navbar-nav .nav-link:hover {
     text-align: center;
     justify-content: center;
     padding: 40px 0; /* Adjust vertical padding as needed */
+
 }
 
 .fullmenu-button .btn {
@@ -214,6 +236,8 @@ header .navbar-nav .nav-link:hover {
     text-transform: uppercase;
     transition: background-color 0.3s; /* Add a smooth color transition on hover */
     text-align: center;
+    width: 240px;
+    height: auto;
 }
 
 .fullmenu-button .btn:hover {
